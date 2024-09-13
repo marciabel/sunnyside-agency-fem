@@ -1,0 +1,289 @@
+html, body, main {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 25px;
+    margin: 0 40px 0 auto;
+
+    background-color: var(--bright-cyan);
+    width: 100%;
+}
+
+.nav-bar__icon {
+    margin: 0 auto 0 34px;
+}
+
+.nav-bar__options {
+    margin: 0px 40px 0px auto;
+    list-style: none;
+    justify-items: center;
+
+    display: flex;
+    gap: 47px;
+
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.nav-bar__options li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.nav-bar__options li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-bar__options button {
+    background-color: var(--white);
+    border: none;
+    border-radius: 28px;
+    width: 140px;
+    height: 56px;
+
+    font-family: "Fraunces", serif;
+    color: var(--very-dark-desaturated-blue);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Hero section */
+
+.hero {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: calc(100% - 81px);
+    background-color: var(--bright-cyan);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+
+    gap: 50px;
+}
+
+.hero__title {
+    color: var(--white);
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+
+    margin-top: 6%;
+}
+
+/* About section */
+
+.about {
+    display: flex;
+
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+
+    justify-content: center;
+}
+
+.about__text__title {
+    font-family: "Fraunces", serif;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 900;
+    font-size: 3rem;
+
+    margin: 0 20%;
+}
+
+.about__text__description {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: var(--dark-grayish);
+    line-height: 30px;
+    margin: 0 20%;
+}
+
+.about__text__call-to-action{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin: 0 20%;
+}
+
+.about__image {
+    flex: 1;
+}
+
+/* Product section */
+
+.services {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.services__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__product__title {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 50%;
+
+    text-align: center;
+}
+
+.services__product__description {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1.1rem;
+
+    width: 50%;
+    text-align: center;
+}
+
+#graphic-design {
+    flex: 1;
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#graphic-design > .services__product__title {
+    color: var(--dark-desaturated-cyan);
+}
+
+#graphic-design > .services__product__description {
+    color: var(--dark-moderate-cyan);
+}
+
+#photography {
+    flex: 1;
+    background-image: url(../images/desktop/image-photography.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#photography > .services__product__title {
+    color: var(--dark-blue);
+}
+
+#photography > .services__product__description {
+    color: var(--dark-blue);
+}
+
+/* Testimonial section */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-background);
+
+    padding: 165px;
+}
+
+.projects__section-title {
+    margin-bottom: 80px;
+    text-transform: uppercase;
+
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 5px;
+}
+
+.projects__testimonials {
+    display: flex;
+    gap: 50px;
+}
+
+.projects__testimonials__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.projects__testimonials__card__picture {
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 90%;
+}
+
+.projects__testimonials__card__description {
+    text-align: center;
+
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1.1rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.projects__testimonials__card__id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects__testimonials__card__id__name {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.projects__testimonials__card__id__ocupation {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+}
+
+/* Footer */
+.decorative-images {
+    display: flex;
+}
+
+.decorative-images img {
+    max-width: 25%;
+}
+
+footer {
+    background-color: var(--light-green);
+}
+
