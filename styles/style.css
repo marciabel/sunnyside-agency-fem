@@ -173,13 +173,37 @@ html, body, main {
     font-size: 1.1rem;
 }
 
-.about__text__call-to-action{
+.about__text__call-to-action {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about__text__call-to-action a{
     font-family: "Fraunces", serif;
     font-weight: 900;
     color: var(--very-dark-desaturated-blue);
     text-decoration: none;
     text-transform: uppercase;
+}
 
+.about__text__call-to-action__underline {
+    position: absolute;
+    align-self: center;
+    top: 12px;
+    height: 10px;
+    width: 137px;
+    border-radius: 28px;
+    opacity: 25%;
+    z-index: -1;
+}
+
+#about-section-transform .about__text__call-to-action__underline {
+    background: var(--yellow);
+}
+
+#about-section-stand-out .about__text__call-to-action__underline {
+    background: var(--soft-red);
 }
 
 /* Product section */
@@ -389,7 +413,7 @@ footer {
 
 /* Breakpoint for desktop size */
 
-@media only screen and (min-device-width : 1024px) {
+@media only screen and (min-width: 1024px) {
     html, body, main {
         height: 100%;
     }
@@ -482,6 +506,7 @@ footer {
     }
 
     .about__text__call-to-action{
+        display: initial;
         margin: 0 20%;
     }
 
@@ -500,6 +525,25 @@ footer {
 
         width: 50%;
         text-align: center;
+    }
+
+    .about__text__call-to-action__underline {
+        position: absolute;
+        top: 12px;
+        left: -10px;
+        height: 10px;
+        width: 137px;
+        border-radius: 28px;
+        opacity: 25%;
+        z-index: -1;
+    }
+    
+    #about-section-transform .about__text__call-to-action__underline {
+        background: var(--yellow);
+    }
+    
+    #about-section-stand-out .about__text__call-to-action__underline {
+        background: var(--soft-red);
     }
 
     /* Testimonial section */
