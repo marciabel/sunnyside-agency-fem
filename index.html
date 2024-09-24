@@ -16,33 +16,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
 
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav class="nav-bar">
     <span class="nav-bar__icon"><img src="images/logo.svg" alt="Sunnyside logo"></span>
-    <ul class="nav-bar__options">
-      <li><a href="#about-section">About</a></li>
-      <li><a href="#services-section">Services</a></li>
-      <li><a href="#projects-section">Projects</a></li>
-      <li>
-        <button>Contact</button>
-      </li>
-    </ul>
+    <button class="nav-bar__button"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+    <div class="nav-bar__menu hidden">
+      <div class="nav-bar__menu__decoration">
+        <div></div>
+      </div>
+      <div class="nav-bar__menu__items">
+        <ul>
+          <li><a href="#about-section-transform">About</a></li>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li>
+            <button>Contact</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
   <main>
     <section class="hero">
       <h2 class="hero__title">We are creatives</h2>
       <span class="hero__arrow"><img src="images/icon-arrow-down.svg" alt="Move to the next section"></span>
     </section>
-  <section class="about" id="about-section">
+  <section class="about" id="about-section-transform">
+    <img class="about__image" src="images/desktop/image-transform.jpg">
     <div class="about__text">
       <h3 class="about__text__title">Transform your brand</h3>
       <p class="about__text__description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
       <a class="about__text__call-to-action" href="">Learn more</a>
     </div>
-    <img class="about__image" src="images/desktop/image-transform.jpg">
   </section>
-  <section class="about">
+  <section class="about" id="about-section-stand-out">
     <img class="about__image" src="images/desktop/image-stand-out.jpg">
     <div class="about__text">
       <h3 class="about__text__title">Stand out to the right audience</h3>
@@ -99,18 +109,25 @@
     <img src="images/desktop/image-gallery-cone.jpg" alt="">
     <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
   </section>
+  <footer class="footer">
+    <img class="footer__logo" src="images/logo-footer.svg">
+    <li class="footer__navigation">
+      <ul class="footer__navigation__item">About</ul>
+      <ul class="footer__navigation__item">Services</ul>
+      <ul class="footer__navigation__item">Projects</ul>
+    </li>
+    <div class="footer__contact">
+      <img class="footer__contact__icon" src="images/icon-facebook.svg" alt="Sunnyside's Facebook page">
+      <img class="footer__contact__icon" src="images/icon-instagram.svg" alt="Sunnyside's Instagram profile">
+      <img class="footer__contact__icon" src="images/icon-twitter.svg" alt="Sunnyside's Twitter profile">
+      <img class="footer__contact__icon" src="images/icon-pinterest.svg" alt="Sunnyside's Pinterest page">
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Marcia Belen Alvarez</a>.
+    </div>
+  </footer>
 </main>
-<footer>
-    About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>  
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
