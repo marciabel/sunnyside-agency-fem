@@ -187,6 +187,14 @@ html, body, main {
     text-transform: uppercase;
 }
 
+#about-section-transform .about__text__call-to-action__underline {
+    background: var(--yellow);
+}
+
+#about-section-stand-out .about__text__call-to-action__underline {
+    background: var(--soft-red);
+}
+
 .about__text__call-to-action__underline {
     position: absolute;
     align-self: center;
@@ -196,14 +204,6 @@ html, body, main {
     border-radius: 28px;
     opacity: 25%;
     z-index: -1;
-}
-
-#about-section-transform .about__text__call-to-action__underline {
-    background: var(--yellow);
-}
-
-#about-section-stand-out .about__text__call-to-action__underline {
-    background: var(--soft-red);
 }
 
 /* Product section */
@@ -381,11 +381,15 @@ footer {
 }
 
 .footer__navigation__item {
+    padding: 0;
+    margin: 15px;
+}
+
+.footer__navigation__item a {
     color: var(--dark-moderate-cyan);
     font-family: "Barlow", sans-serif;
     font-weight: 600;
-    padding: 0;
-    margin: 15px;
+    text-decoration: none;
     font-size: 1.1rem;
 }
 
@@ -425,12 +429,16 @@ footer {
     /* Navigation Bar */
 
     .nav-bar {
-        margin: 0 40px 0 auto;
-        /* width: 100%; */
+        padding: 25px 25px 0px;
     }
 
     .nav-bar__button {
         visibility: hidden;
+    }
+
+    .nav-bar__menu__items button:hover {
+        background-color: var(--light-cyan);
+        color: var(--white);
     }
 
     .nav-bar__menu {
@@ -456,7 +464,7 @@ footer {
     }
 
     .nav-bar__menu__items li a {
-    color: var(--white);
+        color: var(--white);
     }
 
     .nav-bar__menu__items button {
@@ -465,7 +473,7 @@ footer {
 
     /* Hero section */
     .hero {
-        height: calc(100% - 81px);
+        height: 100%;
         gap: 50px;
     }
 
@@ -514,6 +522,10 @@ footer {
         width: 50%;
     }
 
+    .about__text__call-to-action a:hover ~ div {
+        opacity: 100%;
+    }
+
     /* Product section */
     .services {
         flex-direction: row;
@@ -537,11 +549,11 @@ footer {
         opacity: 25%;
         z-index: -1;
     }
-    
+
     #about-section-transform .about__text__call-to-action__underline {
         background: var(--yellow);
     }
-    
+
     #about-section-stand-out .about__text__call-to-action__underline {
         background: var(--soft-red);
     }
@@ -578,7 +590,7 @@ footer {
     .decorative-images {
         flex-wrap: nowrap;
     }
-    
+
     .decorative-images img {
         max-width: 25%;
     }
@@ -589,4 +601,15 @@ footer {
         font-size: 1.2rem;
     }
 
+    .footer__navigation__item:hover a{
+        color: var(--white);
+    }
+
+    .footer__contact__icon {
+        transition: filter 0.3s ease;
+    }
+
+    .footer__contact__icon:hover {
+        filter: invert(100%) brightness(200%);
+    }
 }
